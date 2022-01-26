@@ -6,6 +6,12 @@ const { BinarySearchTree, TreeNode } = require('./binary-search-tree.js');
 
 function findMinBST (rootNode) {
   // Your code here
+  let currNode = rootNode;
+  while(currNode){
+    currNode = currNode.left
+  }
+
+  return currNode.val
 }
 
 function findMaxBST (rootNode) {
